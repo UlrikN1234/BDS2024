@@ -1,0 +1,8 @@
+altair
+seaborn
+numpy
+matplotlib
+pandas
+streamlit
+duckduckgo_search
+scipy
