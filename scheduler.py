@@ -1,0 +1,13 @@
+import schedule
+import time
+import subprocess
+
+def run_prediction():
+    subprocess.run(["python", "/app/scripts/prediction-api-script.py"])
+
+# Schedule the task to run every day at specific times
+schedule.every().day.at("07:30").do(run_prediction)
+
+while True:
+    schedule.run_pending()
+    time.sleep(1)
